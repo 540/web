@@ -34,3 +34,7 @@ Icon
 ._*
 .Spotlight-V100
 .Trashes
+
+# Node
+/node_modules
+!/node_modules/metalsmith-twig/lib/index.js
