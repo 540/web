@@ -36,5 +36,5 @@ Icon
 .Trashes
 
 # Node
-#/node_modules
-#!/node_modules/metalsmith-twig/lib/index.js
+/node_modules
+!/node_modules/metalsmith-twig/lib/index.js
