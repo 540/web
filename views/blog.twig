@@ -1,0 +1,17 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <h1>Welcome to 540's blog</h1>
+    <ul>
+        {% include "partials/posts-collection.twig" %}
+    </ul>
+    {% if pagination.num > 2 %}
+        <a href="page-{{ pagination.num - 1 }}.html">&lt; Prev</a>
+    {% endif %}
+    {% if pagination.num == 2 %}
+        <a href="index.html">&lt; Prev</a>
+    {% endif %}
+    {% if  pagination.num < pagination.total %}
+        <a href="page-{{ pagination.num + 1 }}.html">Next &gt;</a>
+    {% endif %}
+{% endblock %}
