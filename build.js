@@ -27,7 +27,7 @@ metalsmith(__dirname)
         })))
     .use(branch('content/posts/*.html')
         .use(permalinks({
-            pattern: 'blog/posts/:title'
+            pattern: 'blog/:title'
         })))
     .use(twig())
     .use(beautify({
