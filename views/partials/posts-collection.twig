@@ -1,7 +1,7 @@
 {% for i in pagination.start..pagination.end %}
     {% if metadata.posts[i] %}
         <li>
-            <a href="{{ metadata.posts[i].path }}"> <h3>{{ metadata.posts[i].title }}</h3> </a>
+            <a href="/{{ metadata.posts[i].path }}"><h3>{{ metadata.posts[i].title }}</h3></a>
         </li>
     {% endif %}
 {% endfor %}

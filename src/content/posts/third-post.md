@@ -2,6 +2,6 @@
 title: "Third post"
 date: 2015-01-03
 author: Iker
-path: posts/third-post
+view: post.twig
 ---
 This is just a test
