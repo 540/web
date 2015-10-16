@@ -36,6 +36,7 @@ metalsmith(__dirname)
             'assets/vendor/jquery/dist/jquery.min.js',
             'assets/js/jquery.appear.js',
             'assets/vendor/jquery-validation/dist/jquery.validate.min.js',
+            'assets/vendor/jquery-validation/src/localization/messages_es.js',
             'assets/vendor/foundation/js/foundation.min.js',
             'assets/vendor/modernizr/modernizr.js',
             'assets/vendor/masonry/dist/masonry.pkgd.min.js',
@@ -61,6 +62,7 @@ metalsmith(__dirname)
             'assets/css/slick-theme.css',
             'assets/css/style.css',
             'assets/css/app.css',
+            'assets/css/custom.css',
             'assets/css/responsive.css',
             'assets/css/ajax-loader.gif'
         ],

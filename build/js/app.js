@@ -233,16 +233,18 @@ $(document).foundation();
             arrows: false
         });
         $('form#contact_form').validate({
+            lang: 'es',
             messages: {},
             submitHandler: function(form) {
                 $.ajax({
                     type: 'POST',
-                    url: 'send.php',
+                    url: '//formspree.io/dev@540deg.com',
                     data: $(form).serialize(),
+                    dataType: 'json',
                     success: function(data) {
-                        if (data.match(/success/)) {
+                        if ('success' in data) {
                             $(form).trigger('reset');
-                            $('#thanks').show().fadeOut(5000);
+                            $('#thanks').show().fadeOut(8000);
                         }
                     }
                 });
