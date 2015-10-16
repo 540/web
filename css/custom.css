@@ -1,0 +1,15 @@
+.button{
+    background-color:#faed37;
+    color:#333333;
+    font-weight:bold;
+}
+button:hover, button:focus, .button:hover, .button:focus{
+    background-color:#b9ac30;
+    color:#333333;
+}
+.contact-details ul li a:hover{
+    color:#faed37;
+}
+#contact_form #thanks{
+    color:#faed37;
+}
