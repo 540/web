@@ -1,0 +1,54 @@
+@media only screen and (max-width: 1024px) {
+  .box.active .header {
+    height: auto;
+    width: 100%;
+    min-height: auto; }
+    .box.active .header .special-title {
+      width: 100%;
+      float: none;
+      min-height: 400px;
+      position: relative; }
+    .box.active .header .desc {
+      float: none;
+      width: 100%;
+      padding: 10%; }
+
+  .masonry-gallery ul.gallery {
+    margin: 0; }
+    .masonry-gallery ul.gallery li {
+      width: 46%;
+      margin: 2%; }
+
+  .post {
+    background: #f9f9f9;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    .post .image {
+      float: none;
+      width: 100%;
+      height: auto; }
+      .post .image img {
+        width: 100%; }
+    .post .content {
+      padding: 40px;
+      margin-left: 0; }
+
+  .testimonials {
+    height: auto; }
+    .testimonials .quote, .testimonials .author {
+      padding: 80px 80px 60px; }
+    .testimonials .quote {
+      height: auto;
+      min-height: 400px; } }
+@media only screen and (max-width: 640px) {
+  .box.active .header .special-title {
+    min-height: 260px; }
+
+  .masonry-gallery ul.gallery {
+    margin: 0; }
+    .masonry-gallery ul.gallery li {
+      width: 96%;
+      margin: 2%; }
+
+  .testimonials .quote {
+    font-size: 20px; } }
