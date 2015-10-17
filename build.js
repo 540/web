@@ -50,7 +50,6 @@ metalsmith(__dirname)
         src: [
             'assets/images/stock',
             'assets/images/main',
-            'assets/images/custom',
         ],
         dest: 'images'
     }))

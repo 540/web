@@ -129,6 +129,15 @@ $(document).foundation();
             $('#contact .contact-info').slideToggle(400);
             return false;
         });
+        $('#logo').click(function() {
+            //$('#info').animate('opacity', 1000, "swing");
+            $('#info').fadeIn();
+            return false;
+        });
+        $('#info #close').click(function() {
+            $('#info').fadeOut();
+            return false;
+        });
         $('.let-us-talk').click(function() {
             $('#contact .contact-info').slideToggle(400);
             return false;
