@@ -13,5 +13,6 @@ Developed with &#10084;&#127866;and [metalsmith.io](http://metalsmith.io "Metals
   * `$ git clone git@github.com:540/web.git`
   * `$ git clone https://github.com/540/web.git`
 2. Navigate to the project folder
-2. `$ npm install`
-3. `$ node build`
+3. `$ npm install`
+4. `$ bower install`
+5. `$ node build`
