@@ -251,7 +251,6 @@ $(document).foundation();
                 return false;
             }
         });
-        // console.log(window.location.hash);
         switch (window.location.hash) {
             case "#blog-section":
                 $('#blog').click();

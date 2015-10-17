@@ -50,10 +50,7 @@ $(document).foundation();
       $('#logo').animate({ left: left, top: top }, delay, function() {
         $('#back').removeClass('right-bottom left-bottom right-top left-top').addClass(backClass).show();
       });
-
     }
-
-
 
     $('.box').click(function() {
       if ($(this).hasClass('active')) { return; }
@@ -300,9 +297,6 @@ $(document).foundation();
         return false;
       }
     });
-
-
-    // console.log(window.location.hash);
 
     switch(window.location.hash) {
       case "#blog-section":

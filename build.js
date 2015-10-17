@@ -49,7 +49,8 @@ metalsmith(__dirname)
     .use(copyAssets({
         src: [
             'assets/images/stock',
-            'assets/images/main'
+            'assets/images/main',
+            'assets/images/custom',
         ],
         dest: 'images'
     }))

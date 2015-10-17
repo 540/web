@@ -1,5 +1,5 @@
 .button{
-    background-color:#faed37;
+    background-color:#f8d100;
     color:#333333;
     font-weight:bold;
 }
@@ -8,8 +8,23 @@ button:hover, button:focus, .button:hover, .button:focus{
     color:#333333;
 }
 .contact-details ul li a:hover{
-    color:#faed37;
+    color:#f8d100;
 }
 #contact_form #thanks{
     color:#faed37;
+}
+.logo .logo-image {
+    background-color: #333333;
+}
+#contact h2, #contact h4, #contact input {
+    font-family: 'Ubuntu', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+#contact h2 a {
+    font-weight: 300;
+}
+#contact h2 a:hover {
+    color: #f8d100;
+}
+#contact_form input[name='name'] {
+    margin-top:0;
 }
