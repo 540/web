@@ -28,7 +28,6 @@ button:hover, button:focus, .button:hover, .button:focus{
 #contact_form input[name='name'] {
     margin-top:0;
 }
-
 #rectangle-A {
     background:#f9f9f9 url("../images/nosotros-A.png");
     display:block;
@@ -52,25 +51,80 @@ button:hover, button:focus, .button:hover, .button:focus{
 }
 
 #rectangle-C {
-    background:#ebebeb url("../images/blog-A.png");
-    display:block;
-    max-width:100%;
-    height:500px;
-}
-
-#rectangle-C:hover {
-    background:#333333 url("../images/blog-B.png");
-}
-
-#rectangle-D {
     background:#ebebeb url("../images/clientes-A.png");
     display:block;
     max-width:100%;
     height:500px;
 }
 
-#rectangle-D:hover {
+#rectangle-C:hover {
     background:#333333 url("../images/clientes-B.png");
 }
 
+#rectangle-D {
+    background:#ebebeb url("../images/blog-A.png");
+    display:block;
+    max-width:100%;
+    height:500px;
+}
 
+#rectangle-D:hover {
+    background:#333333 url("../images/blog-B.png");
+}
+#logo {
+    cursor: pointer;
+}
+#info {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.85;
+    filter: alpha(opacity=85);
+}
+#info #close {
+    float: right;
+}
+#info #close img {
+    width: 80px;
+    margin: 20px;
+}
+#info .full_logo {
+    height: 400px;
+    clear: both;
+    display: block;
+    margin: auto;
+}
+#info .social {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+#info .social ul li {
+    margin-top: 2.375rem;
+    margin-left: 0.250rem;
+}
+#info .social ul li .fa {
+    color: #333333;
+}
+#info .social ul li a:hover .fa {
+    color: #f8d100;
+}
+#info .social ul li .fa.fa-circle, #info .social ul li a:hover .fa.fa-circle {
+    color: #ffffff;
+}
+#info .social ul li .fa-stack {
+    line-height: 2.1em;
+}
+
+
+@media all and (max-width: 1024px) {
+    #info #close img {
+        width: 30px;
+    }
+    #info .full_logo{
+        height:300px;
+    }
+}
