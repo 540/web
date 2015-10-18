@@ -28,48 +28,54 @@ button:hover, button:focus, .button:hover, .button:focus{
 #contact_form input[name='name'] {
     margin-top:0;
 }
+.header:hover {
+    background-color: #333333 !important;
+}
+.header {
+    background-color: #f9f9f9;
+}
 #rectangle-A {
-    background:#f9f9f9 url("../images/nosotros-A.png");
+    background: url("../images/nosotros-A.png");
     display:block;
     max-width:100%;
     height:500px;
 }
 
-#rectangle-A:hover {
-    background:#333333 url("../images/nosotros-B.png");
+.header:hover #rectangle-A {
+    background: url("../images/nosotros-B.png");
 }
 
 #rectangle-B {
-    background:#ebebeb url("../images/servicios-A.png");
+    background: url("../images/servicios-A.png");
     display:block;
     max-width:100%;
     height:500px;
 }
 
 #rectangle-B:hover {
-    background:#333333 url("../images/servicios-B.png");
+    background: url("../images/servicios-B.png");
 }
 
 #rectangle-C {
-    background:#ebebeb url("../images/clientes-A.png");
+    background: url("../images/clientes-A.png");
     display:block;
     max-width:100%;
     height:500px;
 }
 
 #rectangle-C:hover {
-    background:#333333 url("../images/clientes-B.png");
+    background: url("../images/clientes-B.png");
 }
 
 #rectangle-D {
-    background:#ebebeb url("../images/blog-A.png");
+    background: url("../images/blog-A.png");
     display:block;
     max-width:100%;
     height:500px;
 }
 
 #rectangle-D:hover {
-    background:#333333 url("../images/blog-B.png");
+    background: url("../images/blog-B.png");
 }
 #logo {
     cursor: pointer;
