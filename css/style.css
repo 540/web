@@ -239,7 +239,6 @@ h1.white, h2.white, h3.white, h4.white, h5.white, h6.white {
   height: 100%; }
 
 .header:hover {
-  background: #7cedd7 !important;
   -webkit-transition-property: background;
   -moz-transition-property: background;
   transition-property: background;

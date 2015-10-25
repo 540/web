@@ -1,0 +1,58 @@
+<h1 id="eventemitter-gitter-https-badges-gitter-im-join-chat-svg-gitter-">EventEmitter <a href="https://gitter.im/Olical/EventEmitter?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join Chat.svg" alt="Gitter"></a></h1>
+<h2 id="event-based-javascript-for-the-browser">Event based JavaScript for the browser</h2>
+<p>As the subtitle suggests, this script brings the power of events from platforms such as <a href="http://nodejs.org/">node.js</a> to your browser. Although it can
+    be used on any other platform, I just built it with browsers in mind.</p>
+<p>This is actually the fourth full rewrite of EventEmitter, my aim is for it to be faster and lighter than ever before. It also has a remapped API which just makes
+    a lot more sense. Because the methods now have more descriptive names it is friendlier to extension into other classes. You will be able to distinguish event
+    method from your own methods.</p>
+<p>I have been working on it for over <del>a year</del> <del>two</del> three years so far and in that time my skills in JavaScript have come a long way. This script
+    is a culmination of my learnings which you can hopefully find very useful.</p>
+<h2 id="dependencies">Dependencies</h2>
+<p>There are no hard dependencies. The only reason you will want to run <code>npm install</code> to grab the development dependencies is to build the documentation
+    or minify the source code. No other scripts are required to actually use EventEmitter.</p>
+<h2 id="documentation">Documentation</h2>
+<ul>
+    <li><a href="https://github.com/Wolfy87/EventEmitter/blob/master/docs/guide.md">Guide</a></li>
+    <li><a href="https://github.com/Olical/EventEmitter/blob/master/docs/api.md">API</a></li>
+</ul>
+<h3 id="examples">Examples</h3>
+<ul>
+    <li><a href="http://jsfiddle.net/Wolfy87/qXQu9/">Simple</a></li>
+    <li><a href="http://jsfiddle.net/Wolfy87/JqRvS/">RegExp DOM caster</a></li>
+</ul>
+<h2 id="contributing-aim-your-pull-request-at-the-develop-branch-">Contributing (aim your pull request at the <code>develop</code> branch!)</h2>
+<p>If you wish to contribute to the project then please commit your changes into the <code>develop</code> branch. All pull requests should contain a failing test which
+    is then resolved by your additions. <a href="https://github.com/Olical/EventEmitter/pull/46">A perfect example</a> was submitted by <a href="https://github.com/nathggns">nathggns</a>.</p>
+<h2 id="testing">Testing</h2>
+<p>Tests are performed using <a href="http://visionmedia.github.io/mocha/">Mocha</a> and <a href="http://chaijs.com/">Chai</a>, just serve up the directory using your
+    local HTTP server of choice (<a href="https://www.npmjs.org/package/http-server">http-server</a> is probably a good choice) and open up <code>tests/index.html</code>.
+    You can also use the server scripts in the <code>tools</code> directory.</p>
+<h2 id="building-the-documentation">Building the documentation</h2>
+<p>You can run <code>tools/doc.sh</code> to build from the JSDoc comments found within the source code. The built documentation will be placed in <code>docs/api.md</code>.
+    I actually keep this inside the repository so each version will have it&#39;s documentation stored with it.</p>
+<h2 id="minifying">Minifying</h2>
+<p>You can grab minified versions of EventEmitter from inside this repository, every version is tagged. If you need to build a custom version then you can run <code>tools/dist.sh</code>.</p>
+<h2 id="cloning">Cloning</h2>
+<p>You can clone the repository with your generic clone commands as a standalone repository or submodule.</p>
+<pre><code class="lang-bash"># Full repository
+git clone git://github.com/Olical/EventEmitter.git
+
+# Or submodule
+git submodule add git://github.com/Olical/EventEmitter.git assets/js/EventEmitter
+</code></pre>
+<h3 id="package-managers">Package managers</h3>
+<p>You can also get a copy of EventEmitter through the following package managers:</p>
+<ul>
+    <li><a href="https://npmjs.org/">NPM</a> (wolfy87-eventemitter)</li>
+    <li><a href="http://bower.io/">Bower</a> (eventEmitter)</li>
+    <li><a href="http://github.com/component/component">Component</a> (Olical/EventEmitter)</li>
+</ul>
+<h2 id="unlicense">Unlicense</h2>
+<p>This project used to be released under MIT, but I release everything under the <a href="http://unlicense.org/">Unlicense</a> now. Here&#39;s the gist of it but you
+    can find the full thing in the <code>UNLICENSE</code> file.</p>
+<blockquote>
+    <p>This is free and unencumbered software released into the public domain.</p>
+    <p>Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose,
+        commercial or non-commercial, and by any means.</p>
+</blockquote>
+<p>I gave people the chance to object in issue #84, which also explains my reasoning.</p>
