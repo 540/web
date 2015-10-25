@@ -1,0 +1,31 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    <div class="full single">
+        <div class="two spacing"></div>
+
+        <div class='row'>
+            <div class='large-12 columns'>
+                <a href="/" class="back-to-blog"><i class="fa fa-long-arrow-left"></i>Volver</a>
+
+                <div class="two spacing"></div>
+                <div class='post single'>
+                    <h3>{{ title }}</h3>
+
+                    <p class='info'>
+                        <span>{{ date|date("j/m/Y") }}</span>
+                    </p>
+
+                    {{ content }}
+
+                </div>
+                <div class='four spacing'></div>
+                <a href="/" class="back-to-blog"><i class="fa fa-long-arrow-left"></i> Volver</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="four spacing"></div>
+    <div class="two spacing"></div>
+{% endblock %}

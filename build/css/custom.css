@@ -5,12 +5,20 @@
 }
 
 .button:hover, .button:focus, .button:hover, .button:focus {
-  background-color: #f8d100;
+  background-color: #d1ab00;
   color: #333333;
 }
 
 #back:hover {
   color: #f8d100;
+}
+
+a {
+  color: #f8d100;
+}
+
+a:hover, a:focus {
+  color: #d1ab00;
 }
 
 .desc {
@@ -223,5 +231,13 @@
 }
 
 .testimonials .slick-dots .slick-active button:before {
+  color: #f8d100;
+}
+
+.member ul li a:hover {
+  color: #f8d100;
+}
+
+.post h3 a:hover {
   color: #f8d100;
 }

@@ -1,4 +1,5 @@
 $primary-color:#f8d100;
+$primary-color-hover:#d1ab00;
 $primary-color-dark:#333333;
 
 $secondary-font:'Ubuntu', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -9,12 +10,18 @@ $secondary-font:'Ubuntu', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif
   font-weight:bold;
 
   &:hover, &:focus, &:hover, &:focus{
-    background-color:$primary-color;
+    background-color:$primary-color-hover;
     color:#333333;
   }
 }
 #back:hover{
   color:$primary-color;
+}
+a {
+  color: $primary-color;
+}
+a:hover, a:focus {
+  color: $primary-color-hover;
 }
 .desc{
   background-color:$primary-color;
@@ -129,13 +136,14 @@ $secondary-font:'Ubuntu', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif
       line-height:2.1em;
     }
   }
-}
-@media all and (max-width:1024px) {
-  #info #close img{
-    width:30px;
-  }
-  #info .full_logo{
-    height:300px;
+
+  @media all and (max-width:1024px) {
+    #close img{
+      width:30px;
+    }
+    .full_logo{
+      height:300px;
+    }
   }
 }
 .section-title{
@@ -200,4 +208,10 @@ $secondary-font:'Ubuntu', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif
   .slick-dots .slick-active button:before{
     color:$primary-color;
   }
+}
+.member ul li a:hover {
+  color: $primary-color;
+}
+.post h3 a:hover {
+  color: $primary-color;
 }

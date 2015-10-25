@@ -3,7 +3,6 @@ var metalsmith = require('metalsmith'),
     twig = require('metalsmith-twig-540'),
     browsersync = require('metalsmith-browser-sync'),
     collections = require('metalsmith-collections-540'),
-    paginate = require('metalsmith-paginate'),
     permalinks = require('metalsmith-permalinks'),
     branch = require('metalsmith-branch'),
     beautify = require('metalsmith-beautify'),
@@ -18,10 +17,6 @@ metalsmith(__dirname)
             sortBy: 'date',
             reverse: true
         }
-    }))
-    .use(paginate({
-        perPage: 2,
-        path: "blog/page"
     }))
     .use(sass({
         outputDir: 'css/',
@@ -47,6 +42,7 @@ metalsmith(__dirname)
         src: [
             'src/assets/images/stock',
             'src/assets/images/main',
+            'src/assets/images/posts'
         ],
         dest: 'images'
     }))
@@ -84,6 +80,10 @@ metalsmith(__dirname)
             "indent_size": 2
         }
     }))
+    //.use(function (files, metalsmith, done) {
+    //    console.log(metalsmith.metadata().collections.posts)
+    //    done();
+    //})
     .use(browsersync({
         files: ['src/assets/**/*', 'src/*.md', 'src/**/*.md', 'src/**/**/*.md', 'views/*.twig', 'views/**/*.twig']
     }))
