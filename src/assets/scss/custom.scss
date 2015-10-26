@@ -17,11 +17,11 @@ $secondary-font:'Ubuntu', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif
 #back:hover{
   color:$primary-color;
 }
-a {
-  color: $primary-color;
+a{
+  color:$primary-color;
 }
-a:hover, a:focus {
-  color: $primary-color-hover;
+a:hover, a:focus{
+  color:$primary-color-hover;
 }
 .desc{
   background-color:$primary-color;
@@ -194,6 +194,8 @@ a:hover, a:focus {
     height:36px;
   }
   p{
+    font-family:$secondary-font;
+    font-weight:100;
     font-size:17px;
     line-height:22px;
   }
@@ -209,9 +211,9 @@ a:hover, a:focus {
     color:$primary-color;
   }
 }
-.member ul li a:hover {
-  color: $primary-color;
+.member ul li a:hover{
+  color:$primary-color;
 }
-.post h3 a:hover {
-  color: $primary-color;
+.post h3 a:hover{
+  color:$primary-color;
 }
