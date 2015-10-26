@@ -217,6 +217,8 @@ a:hover, a:focus {
 }
 
 .icon-text-diamond p {
+  font-family: "Ubuntu", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 100;
   font-size: 17px;
   line-height: 22px;
 }
