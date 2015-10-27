@@ -244,21 +244,37 @@ a:hover, a:focus {
   color: #f8d100;
 }
 
-/* technologie */
-.technologie {
+.technology {
   position: relative;
 }
 
-.technologie img.colored {
+.technology:hover img.colored {
+  display: block;
+}
+
+.technology img.colored {
   display: none;
   position: absolute;
   top: 0;
 }
 
-.technologie:hover img.colored {
+#service .desc.invisible {
+  padding: 100px 10% 40px 80px;
+}
+
+.client {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto 30px;
+  position: relative;
+}
+
+.client:hover img.colored {
   display: block;
 }
 
-#service .desc.invisible {
-  padding: 100px 10% 40px 80px;
+.client img.colored {
+  display: none;
+  position: absolute;
+  top: 0;
 }
