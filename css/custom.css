@@ -243,3 +243,18 @@ a:hover, a:focus {
 .post h3 a:hover {
   color: #f8d100;
 }
+
+/* technologie */
+.technologie {
+  position: relative;
+}
+
+.technologie img.colored {
+  display: none;
+  position: absolute;
+  top: 0;
+}
+
+.technologie:hover img.colored {
+  display: block;
+}
