@@ -258,3 +258,7 @@ a:hover, a:focus {
 .technologie:hover img.colored {
   display: block;
 }
+
+#service .desc.invisible {
+  padding: 100px 10% 40px 80px;
+}
