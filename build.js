@@ -42,7 +42,9 @@ metalsmith(__dirname)
         src: [
             'src/assets/images/stock',
             'src/assets/images/main',
-            'src/assets/images/posts'
+            'src/assets/images/posts',
+            'src/assets/images/clients',
+            'src/assets/images/technologies',
         ],
         dest: 'images'
     }))

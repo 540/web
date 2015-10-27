@@ -34,12 +34,12 @@ $(document).foundation();
                     var top = "150%";
                     var backClass = "left-bottom";
                     break;
-                case "work":
+                case "blog":
                     var left = "150%";
                     var top = "-50%";
                     var backClass = "right-top";
                     break;
-                case "blog":
+                case "work":
                     var left = "-50%";
                     var top = "-50%";
                     var backClass = "left-top";
@@ -104,26 +104,6 @@ $(document).foundation();
             dots: true,
             speed: 2000,
             arrows: false
-        });
-        $('.clients').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            pauseOnHover: false,
-            responsive: [{
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            }, {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            }]
         });
         $('.technologies').slick({
             slidesToShow: 4,
