@@ -1,11 +1,11 @@
 ---
-title: "Hello World!\n¡Hola Mundo!"
-date: 2015-10-28
-author: Gorka
+title: "Desayuno Biko"
+date: 2015-10-29
+author: Pablo
 view: single.twig
-miniature: "post1.jpg"
+miniature: "post2.jpg"
 ---
-![](../../images/post1-interior.jpg)
+![](../../images/post2-interior.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod esse fugit soluta minima, rem reiciendis maxime provident, dolore quibusdam culpa?
 
