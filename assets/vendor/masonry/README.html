@@ -1,0 +1,50 @@
+<h1 id="masonry">Masonry</h1>
+<p><em>Cascading grid layout library</em></p>
+<p>Masonry works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. You’ve probably seen it in
+    use all over the Internet.</p>
+<p>See <a href="http://masonry.desandro.com">masonry.desandro.com</a> for complete docs and demos.</p>
+<h2 id="install">Install</h2>
+<h3 id="download">Download</h3>
+<ul>
+    <li><a href="https://github.com/desandro/masonry/raw/master/dist/masonry.pkgd.js">masonry.pkgd.js</a> un-minified, or</li>
+    <li><a href="https://github.com/desandro/masonry/raw/master/dist/masonry.pkgd.min.js">masonry.pkgd.min.js</a> minified</li>
+</ul>
+<h3 id="cdn">CDN</h3>
+<p>Link directly to <a href="https://cdnjs.com/libraries/masonry">Masonry files on cdnjs</a>.</p>
+<pre><code class="lang-html">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.js&quot;&gt;&lt;/script&gt;
+&lt;!-- or --&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h3 id="package-managers">Package managers</h3>
+<p>Bower: <code>bower install masonry --save</code></p>
+<p><a href="https://www.npmjs.com/package/masonry-layout">npm</a>: <code>npm install masonry-layout --save</code></p>
+<h2 id="initialize">Initialize</h2>
+<p>With jQuery</p>
+<pre><code class="lang-js">$(&#39;.grid&#39;).masonry({
+  // options...
+  itemSelector: &#39;.grid-item&#39;,
+  columnWidth: 200
+});
+</code></pre>
+<p>With vanilla JavaScript</p>
+<pre><code class="lang-js">// vanilla JS
+var grid = document.querySelector(&#39;.grid&#39;);
+var msnry = new Masonry( grid, {
+  // options...
+  itemSelector: &#39;.grid-item&#39;,
+  columnWidth: 200
+});
+</code></pre>
+<p>With HTML</p>
+<p>Add a class of <code>js-masonry</code> to your element. Options can be set in JSON in <code>data-masonry-options</code>.</p>
+<pre><code class="lang-html">&lt;div class=&quot;grid js-masonry&quot;
+  data-masonry-options=&#39;{ &quot;itemSelector&quot;: &quot;.grid-item&quot;, &quot;columnWidth&quot;: 200 }&#39;&gt;
+  &lt;div class=&quot;grid-item&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-item&quot;&gt;&lt;/div&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+<h2 id="license">License</h2>
+<p>Masonry is released under the <a href="http://desandro.mit-license.org">MIT license</a>. Have at it.</p>
+<hr>
+<p>Copyright 2015 David DeSandro</p>

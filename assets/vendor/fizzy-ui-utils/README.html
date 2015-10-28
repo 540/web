@@ -1,0 +1,63 @@
+<h1 id="fizzy-ui-utils">Fizzy UI utils</h1>
+<p>UI utility &amp; helper functions</p>
+<p>Used in <a href="http://flickity.metafizzy.co">Flickity</a>, <a href="http://isotope.metafizzy.co">Isotope</a>, <a href="http://masonry.desandro.com">Masonry</a>,
+    <a href="http://draggabilly.desandro.com">Draggabilly</a></p>
+<h2 id="install">Install</h2>
+<p>Bower: <code>bower install fizzy-ui-utils --save</code></p>
+<p>npm: <code>npm install fizzy-ui-utils --save</code></p>
+<h2 id="api">API</h2>
+<pre><code class="lang-js">// fizzyUIUtils is the browser global
+var utils = fizzyUIUtils;
+
+// ---- ---- //
+
+utils.extend( a, b )
+// extend object
+
+utils.modulo( num, div )
+// num [modulo] div
+
+utils.isArray( obj )
+// check if object is Array
+
+utils.makeArray( obj )
+// make array from object
+
+utils.indexOf( ary, obj )
+// get index of object in array
+
+utils.removeFrom( ary, obj )
+// remove object from array
+
+utils.isElement( obj )
+// check if object is an element
+
+utils.setText( elem, text )
+// set text of an element
+
+utils.getParent( elem, selector )
+// get parent element of an element, given a selector string
+
+utils.getQueryElement( elem )
+// if elem is a string, use it as a selector and return element
+
+Class.prototype.handleEvent = utils.handleEvent;
+// enable Class.onclick when element.addEventListener( &#39;click&#39;, this, false )
+
+utils.filterFindElements( elems, selector )
+// iterate through elems, filter and find all elements that match selector
+
+utils.debounceMethod( Class, methodName, threhold )
+// debounce a class method
+
+utils.toDashed( str )
+// &#39;camelCaseString&#39; -&gt; &#39;camel-case-string&#39;
+
+utils.htmlInit( Class, namespace )
+// on document ready, initialize Class on every element
+// that matches js-namespace
+// pass in JSON options from element&#39;s data-options-namespace attribute
+</code></pre>
+<hr>
+<p>MIT license. Have at it.</p>
+<p>By <a href="http://metafizzy.co">Metafizzy</a></p>
