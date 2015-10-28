@@ -252,6 +252,7 @@ a:hover, a:focus{
 .main-services{
   .columns .icon-text:hover{
     background-size:cover;
+    color: #222222;
   }
 
   .columns:nth-child(1) .icon-text:hover{
@@ -271,5 +272,9 @@ a:hover, a:focus{
   }
   .columns:nth-child(6) .icon-text:hover{
     background:url(../images/service6.jpg) center center no-repeat;
+  }
+
+  .columns:nth-child(4) .icon-text p{
+    margin-bottom: 1rem;
   }
 }

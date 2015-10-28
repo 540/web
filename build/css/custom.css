@@ -1,0 +1,313 @@
+.button {
+  background-color: #f8d100;
+  color: #333333;
+  font-weight: bold;
+}
+
+.button:hover, .button:focus, .button:hover, .button:focus {
+  background-color: #d1ab00;
+  color: #333333;
+}
+
+#back:hover {
+  color: #f8d100;
+}
+
+a {
+  color: #f8d100;
+}
+
+a:hover, a:focus {
+  color: #d1ab00;
+}
+
+.desc {
+  background-color: #f8d100;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo .logo-image {
+  background-color: #333333;
+}
+
+.box .header {
+  background-color: #f9f9f9;
+}
+
+.box .header:hover {
+  background-color: #333333 !important;
+}
+
+.box .header .img2 {
+  display: none;
+}
+
+.box .header .img1 {
+  display: block;
+}
+
+.box .header:hover .img1 {
+  display: none;
+}
+
+.box .header:hover .img2 {
+  display: block;
+}
+
+.box.active .header:hover {
+  background-color: #f9f9f9 !important;
+}
+
+.box.active .header .img1 {
+  display: block;
+}
+
+.box.active .header .img2 {
+  display: none;
+}
+
+#contact {
+  z-index: 100;
+}
+
+#contact .contact-details ul li a:hover {
+  color: #f8d100;
+}
+
+#contact #contact_form #thanks {
+  color: #f8d100;
+}
+
+#contact #contact_form input[name='name'] {
+  margin-top: 0;
+}
+
+#contact h2, #contact #contact h4, #contact #contact input {
+  font-family: "Ubuntu", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+#contact h2 a {
+  font-weight: 300;
+}
+
+#contact h2 a:hover {
+  color: #f8d100;
+}
+
+#info {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.85;
+  z-index: 200;
+  filter: alpha(opacity=85);
+}
+
+#info #close {
+  float: right;
+}
+
+#info #close img {
+  width: 80px;
+  margin: 20px;
+}
+
+#info .full_logo {
+  height: 400px;
+  clear: both;
+  display: block;
+  margin: auto;
+}
+
+#info .social {
+  display: block;
+  margin: auto;
+  width: 150px;
+}
+
+#info .social ul li {
+  margin-top: 2.375rem;
+  margin-left: 0.250rem;
+}
+
+#info .social ul li .fa {
+  color: #333333;
+}
+
+#info .social ul li a:hover .fa {
+  color: #f8d100;
+}
+
+#info .social ul li .fa.fa-circle, #info .social ul li a:hover .fa.fa-circle {
+  color: #ffffff;
+}
+
+#info .social ul li .fa-stack {
+  line-height: 2.1em;
+}
+
+@media all and (max-width: 1024px) {
+  #info #close img {
+    width: 30px;
+  }
+  #info .full_logo {
+    height: 300px;
+  }
+}
+
+.section-title {
+  margin-bottom: 0px;
+}
+
+.section-title h2 {
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.section-title h2:before {
+  border-top: 1px solid #dddddd;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+.section-title h2 span {
+  background: #ffffff;
+  padding: 0 15px;
+  Text-align: Center;
+}
+
+.section-intro {
+  font-size: 22px;
+  margin: 0 30px;
+  text-align: center;
+  font-family: "Ubuntu", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 100;
+  line-height: 32px;
+}
+
+.icon-text-diamond:hover .wrapper .content i {
+  color: #f8d100;
+}
+
+.icon-text-diamond .content {
+  background: #f8d100;
+}
+
+.icon-text-diamond .wrapper .content i {
+  color: #ffffff;
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
+}
+
+.icon-text-diamond p {
+  font-family: "Ubuntu", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.testimonials .quote {
+  background: #f8d100;
+}
+
+.testimonials .quote::after {
+  border: 20px solid transparent;
+  border-left-color: #f8d100;
+}
+
+.testimonials .slick-dots .slick-active button:before {
+  color: #f8d100;
+}
+
+.member ul li a:hover {
+  color: #f8d100;
+}
+
+.post h3 a:hover {
+  color: #f8d100;
+}
+
+.technology {
+  position: relative;
+}
+
+.technology:hover img.colored {
+  display: block;
+}
+
+.technology img.colored {
+  display: none;
+  position: absolute;
+  top: 0;
+}
+
+#service .desc.invisible {
+  padding: 100px 10% 40px 80px;
+}
+
+.client {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto 30px;
+  position: relative;
+}
+
+.client:hover img.colored {
+  display: block;
+}
+
+.client img.colored {
+  display: none;
+  position: absolute;
+  top: 0;
+}
+
+.main-services .columns .icon-text:hover {
+  background-size: cover;
+  color: #222222;
+}
+
+.main-services .columns:nth-child(1) .icon-text:hover {
+  background: url(../images/service1.jpg) center center no-repeat;
+}
+
+.main-services .columns:nth-child(2) .icon-text:hover {
+  background: url(../images/service2.jpg) center center no-repeat;
+}
+
+.main-services .columns:nth-child(3) .icon-text:hover {
+  background: url(../images/service3.jpg) center center no-repeat;
+}
+
+.main-services .columns:nth-child(4) .icon-text:hover {
+  background: url(../images/service4.jpg) center center no-repeat;
+}
+
+.main-services .columns:nth-child(5) .icon-text:hover {
+  background: url(../images/service5.jpg) center center no-repeat;
+}
+
+.main-services .columns:nth-child(6) .icon-text:hover {
+  background: url(../images/service6.jpg) center center no-repeat;
+}
+
+.main-services .columns:nth-child(4) .icon-text p {
+  margin-bottom: 1rem;
+}
