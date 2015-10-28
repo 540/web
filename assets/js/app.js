@@ -100,7 +100,7 @@ $(document).foundation();
         });
         $('.items').slick({
             autoplay: true,
-            pauseOnHover: false,
+            pauseOnHover: true,
             dots: true,
             speed: 2000,
             arrows: false
