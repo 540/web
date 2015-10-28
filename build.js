@@ -40,7 +40,6 @@ metalsmith(__dirname)
     }))
     .use(copyassets({
         src: [
-            'src/assets/images/stock',
             'src/assets/images/main',
             'src/assets/images/posts',
             'src/assets/images/clients',
