@@ -5,4 +5,3 @@ author: Gorka
 view: single.twig
 miniature: "hello-world.jpg"
 ---
-This fifth post content
