@@ -1,7 +1,7 @@
 ---
 title: "Desayuno Biko"
 date: 2015-10-29
-author: Pablo
+author: 540
 view: single.twig
 miniature: "post2.jpg"
 ---

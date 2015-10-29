@@ -1,7 +1,7 @@
 ---
 title: "¡Hola Mundo!"
 date: 2015-10-28
-author: Gorka
+author: 540
 view: single.twig
 miniature: "post1.jpg"
 ---
