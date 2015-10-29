@@ -63,6 +63,12 @@ metalsmith(__dirname)
         ],
         dest: 'fonts'
     }))
+    .use(copyassets({
+        src: [
+            'src/assets/extra/CNAME',
+        ],
+        dest: ''
+    }))
     .use(markdown())
     .use(branch('content/pages/*.html')
         .use(permalinks({
