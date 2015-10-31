@@ -19,5 +19,8 @@
     "imagesloaded": "~3.1.8",
     "jquery-appear": "~0.2.2",
     "jquery-validation": "jquery-validate#~1.14.0"
+  },
+  "devDependencies": {
+    "fastclick": "~1.0.6"
   }
 }

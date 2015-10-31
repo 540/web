@@ -33,6 +33,7 @@ metalsmith(__dirname)
             'src/assets/vendor/modernizr/modernizr.js',
             'src/assets/vendor/masonry/dist/masonry.pkgd.min.js',
             'src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js',
+            'src/assets/vendor/fastclick/lib/fastclick.js',
             'src/assets/js/app.js',
             'src/assets/js/slick.min.js'
         ],

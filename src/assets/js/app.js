@@ -5,6 +5,8 @@ $(document).foundation();
 
     $(document).ready(function () {
 
+        FastClick.attach(document.body);
+
         setTimeout(function () {
             $('.box').each(function () {
                 this.scrollTop = 0;
@@ -54,10 +56,12 @@ $(document).foundation();
             });
         }
 
-        $('.box').click(function () {
+        $('.box').on('click touchend', function () {
             if ($(this).hasClass('active')) {
                 return;
             }
+
+            window.location.hash = $(this).find('a').attr("href");
 
             sectionAnimation.apply($(this), [$(this).attr('id')]);
 
@@ -78,7 +82,7 @@ $(document).foundation();
             return false;
         });
 
-        $('#back').click(function (e) {
+        $('#back').on('click touchend', function (e) {
             e.preventDefault();
 
             var delay = 500;
@@ -138,22 +142,22 @@ $(document).foundation();
             ]
         });
 
-        $('#contact .handle').click(function () {
+        $('#contact .handle').on('click touchend', function () {
             $('#contact .contact-info').slideToggle(400);
             return false;
         });
 
-        $('#logo').click(function () {
+        $('#logo').on('click touchend', function () {
             //$('#info').animate('opacity', 1000, "swing");
             $('#info').fadeIn();
             return false;
         });
-        $('#info #close').click(function () {
+        $('#info #close').on('click touchend', function () {
             $('#info').fadeOut();
             return false;
         });
 
-        $('.let-us-talk').click(function () {
+        $('.let-us-talk').on('click touchend', function () {
             $('#contact .contact-info').slideToggle(400);
             return false;
         });
@@ -187,7 +191,7 @@ $(document).foundation();
                 msnry.layout();
             });
 
-            $('.gallery-nav ul li a', $ctx).click(function () {
+            $('.gallery-nav ul li a', $ctx).on('click touchend', function() {
 
                 // disable filter
                 // if( $('.gallery-nav', $ctx).hasClass('disabled') ) return false;
@@ -321,26 +325,26 @@ $(document).foundation();
         });
 
         switch (window.location.hash) {
-            case "#blog-section":
-                $('#blog').click();
-                setTimeout(function () {
-                    $('body').removeClass('hide');
-                }, 500);
-                break;
-            case "#work-section":
-                $('#work').click();
-                setTimeout(function () {
-                    $('body').removeClass('hide');
-                }, 500);
-                break;
-            case "#about-section":
+            case "#about":
                 $('#about').click();
                 setTimeout(function () {
                     $('body').removeClass('hide');
                 }, 500);
                 break;
-            case "#service-section":
+            case "#services":
                 $('#service').click();
+                setTimeout(function () {
+                    $('body').removeClass('hide');
+                }, 500);
+                break;
+            case "#blog":
+                $('#blog').click();
+                setTimeout(function () {
+                    $('body').removeClass('hide');
+                }, 500);
+                break;
+            case "#clients":
+                $('#work').click();
                 setTimeout(function () {
                     $('body').removeClass('hide');
                 }, 500);
