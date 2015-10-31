@@ -92,12 +92,13 @@ $(document).foundation();
 
             window.location.hash = 'home';
 
-            $('.box').scrollTop(0);
-            $('.container').scrollTop(0);
             $('#logo img').show();
             $('#back').hide();
             $('#contact .contact-info').hide();
             $('#logo').animate({left: "50%", top: "50%"}, delay);
+            setTimeout(function () {
+                current_active_section.scrollTop(0);
+            }, 100)
 
             return false;
         });
