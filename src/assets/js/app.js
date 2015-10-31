@@ -92,9 +92,10 @@ $(document).foundation();
 
             window.location.hash = 'home';
 
+            $('.box').animate({ scrollTop: 0 }, 0);
             $('#logo img').show();
             $('#back').hide();
-            current_active_section.scrollTop(0);
+            $('.container').scrollTop(0);
             $('#contact .contact-info').hide();
             $('#logo').animate({left: "50%", top: "50%"}, delay);
 
