@@ -101,7 +101,8 @@ $(document).foundation();
             autoplay: true,
             pauseOnHover: true,
             dots: true,
-            speed: 5000,
+            speed: 2000,
+            autoplaySpeed: 6000,
             arrows: false
         });
         $('.technologies').slick({
