@@ -5,7 +5,7 @@ $(document).foundation();
         FastClick.attach(document.body);
         setTimeout(function() {
             $('.box').each(function() {
-                this.scrollTop = 0;
+                $(this).scrollTop(0);
             });
         }, 500);
         var sectionAnimation = function(slug) {
@@ -93,7 +93,7 @@ $(document).foundation();
                 top: "50%"
             }, delay);
             $('.box').each(function() {
-                this.scrollTop = 0;
+                $(this).scrollTop(0);
             });
             return false;
         });

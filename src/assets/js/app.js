@@ -9,7 +9,7 @@ $(document).foundation();
 
         setTimeout(function () {
             $('.box').each(function () {
-                this.scrollTop = 0;
+                $(this).scrollTop(0);
             });
         }, 500);
 
@@ -97,7 +97,7 @@ $(document).foundation();
             $('#contact .contact-info').hide();
             $('#logo').animate({left: "50%", top: "50%"}, delay);
             $('.box').each(function () {
-                this.scrollTop = 0;
+                $(this).scrollTop(0);
             });
 
             return false;
