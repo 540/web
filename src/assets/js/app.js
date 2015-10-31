@@ -75,10 +75,6 @@ $(document).foundation();
                 }, 500)
             }
 
-            setTimeout(function () {
-                masonryGallery("#masonry-gallery");
-            }, 500);
-
             return false;
         });
 
@@ -112,7 +108,7 @@ $(document).foundation();
             autoplay: true,
             pauseOnHover: true,
             dots: true,
-            speed: 2000,
+            speed: 4000,
             arrows: false
         });
 
@@ -162,128 +158,6 @@ $(document).foundation();
             return false;
         });
 
-        var masonryGallery = function (sel) {
-
-            var $ctx = $(sel);
-            var items = $('.gallery li', $ctx);
-            var gutter = $ctx.data('gutter');
-
-            if (!gutter) {
-                gutter = 0
-            }
-            ;
-
-            for (var i = 0; i < items.length; i++) {
-                var item = items[i];
-                $(item).data('masonry-id', i);
-            }
-
-            var msnry = new Masonry($('.gallery', $ctx)[0], {
-                itemSelector: 'li',
-                gutter: gutter,
-                isInitLayout: false,
-                columnWidth: ".gallery li:not(.wide)"
-            });
-
-            window.msnry = msnry;
-
-            $('.gallery', $ctx).imagesLoaded(function () {
-                msnry.layout();
-            });
-
-            $('.gallery-nav ul li a', $ctx).on('click touchend', function() {
-
-                // disable filter
-                // if( $('.gallery-nav', $ctx).hasClass('disabled') ) return false;
-
-                // $('.gallery-nav', $ctx).addClass('disabled');
-
-                $('.gallery-nav ul li').removeClass('current');
-                $(this).closest('li').addClass('current');
-
-                var cat = $(this).attr('data-cat');
-
-                var gallery = $('.gallery-nav').closest('.masonry-gallery').find('ul.gallery');
-
-                if (cat === 'all') {
-                    var exists = $('.gallery li', $ctx);
-                    var elems = [];
-
-                    for (var i = 0; i < items.length; i++) {
-                        var item = items[i];
-                        var skip = false;
-
-                        for (var j = 0; j < exists.length; j++) {
-                            var exist = exists[j];
-                            if ($(item).data('masonry-id') == $(exist).data('masonry-id')) {
-                                skip = true;
-                            }
-                        }
-
-                        if (!skip) {
-                            ($('.gallery', $ctx)[0]).appendChild($(item)[0]);
-                            elems.push($(item)[0]);
-                        }
-                    }
-                    msnry.prepended(elems);
-
-                } else {
-                    var lis = $('li', gallery);
-
-                    for (var i = 0; i < lis.length; i++) {
-                        var li = lis[i];
-
-                        if (!$(li).hasClass(cat)) {
-                            msnry.remove($(li));
-                        }
-                    }
-
-                    var exists = $('.gallery li', $ctx);
-                    var elems = [];
-
-                    for (var i = 0; i < items.length; i++) {
-                        var item = items[i];
-                        var skip = false;
-
-                        for (var j = 0; j < exists.length; j++) {
-                            var exist = exists[j];
-
-                            if ($(item).data('masonry-id') == $(exist).data('masonry-id')) {
-                                skip = true;
-                            }
-                        }
-
-
-                        if ($(item).hasClass(cat) && !skip) {
-                            ($('.gallery', $ctx)[0]).appendChild($(item)[0]);
-                            elems.push($(item)[0]);
-                        }
-                    }
-
-                    msnry.appended(elems);
-
-                }
-
-                msnry.layout();
-
-
-                // enable filter
-                // setTimeout(function() {
-                //   $('.gallery-nav', $ctx).removeClass('disabled');
-                // }, 500);
-
-                return false;
-
-            });
-
-        }
-
-
-        $('.gallery a').click(function () {
-            // window.location = $(this).attr('href');
-        });
-
-        // masonryGallery('#masonry-gallery')
 
         $('.fadeinleft, .fadeinright, .fadein, .popin, .moveup, .diamond-milestones-wrapper').appear(function () {
             var delay = $(this).data('delay');
