@@ -85,12 +85,10 @@ $(document).foundation();
             }, delay);
             current_active_section.css('overflow', 'hidden');
             window.location.hash = 'home';
-            $('.box').animate({
-                scrollTop: 0
-            }, 0);
+            $('.box').scrollTop(0);
+            $('.container').scrollTop(0);
             $('#logo img').show();
             $('#back').hide();
-            $('.container').scrollTop(0);
             $('#contact .contact-info').hide();
             $('#logo').animate({
                 left: "50%",
