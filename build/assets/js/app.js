@@ -87,21 +87,19 @@ $(document).foundation();
             window.location.hash = 'home';
             $('#logo img').show();
             $('#back').hide();
+            current_active_section.scrollTop(0);
             $('#contact .contact-info').hide();
             $('#logo').animate({
                 left: "50%",
                 top: "50%"
             }, delay);
-            $('.box').each(function() {
-                $(this).scrollTop(0);
-            });
             return false;
         });
         $('.items').slick({
             autoplay: true,
             pauseOnHover: true,
             dots: true,
-            speed: 4000,
+            speed: 5000,
             arrows: false
         });
         $('.technologies').slick({
