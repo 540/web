@@ -1,5 +1,9 @@
 <h1 id="jquery-appear">jQuery-appear</h1>
 <p>A jQuery plugin provides appear and disappear events to do lazyload, infinite scroll or else effect.</p>
+<h2 id="demo">Demo</h2>
+<p><a href="http://emn178.github.io/jquery-appear/samples/lazyload/">Lazyload</a> (<a href="http://emn178.github.io/jquery-appear/samples/overflow/">Overflow and Tabs</a>)
+    (You could also refer to <a href="http://github.io/emn178/jquery-lazyload-any/">jQuery-lazyload-any</a>)
+    <br><a href="http://emn178.github.io/jquery-appear/samples/infinite-scroll/">Infinite Scroll</a> </p>
 <h2 id="download">Download</h2>
 <p><a href="https://raw.github.com/emn178/jquery-appear/master/build/jquery.appear.min.js">Compress</a>
     <br><a href="https://raw.github.com/emn178/jquery-appear/master/src/jquery.appear.js">Uncompress</a></p>
@@ -7,12 +11,6 @@
 <p>You can also install jquery-appear by using Bower.</p>
 <pre><code>bower install jquery-appear
 </code></pre>
-<h2 id="demo">Demo</h2>
-<p><a href="http://emn178.github.io/jquery-appear/samples/lazyload/">Lazyload</a> (<a href="http://emn178.github.io/jquery-appear/samples/overflow/">Overflow and Tabs</a>)
-    (You could also refer to <a href="http://github.io/emn178/jquery-lazyload-any/">jQuery-lazyload-any</a>)
-    <br><a href="http://emn178.github.io/jquery-appear/samples/infinite-scroll/">Infinite Scroll</a> </p>
-<h2 id="browser-support">Browser Support</h2>
-<p>jQuery-appear currently supports IE7+, Chrome, Firefox, Safari and Opera.</p>
 <h2 id="usage">Usage</h2>
 <p>You could just use jQuery <code>bind</code>, <code>delegate</code> or <code>on</code> to listen event. HTML
 </p>
@@ -20,8 +18,12 @@
 &lt;/div&gt;
 </code></pre>
 <p>JavaScript</p>
-<pre><code class="lang-JavaScript">$(&#39;#you-want-to-detect&#39;).bind(&#39;appear&#39;, appearHandler);
+<pre><code class="lang-JavaScript">// trigger when first appear or disappear
+$(&#39;#you-want-to-detect&#39;).bind(&#39;appear&#39;, appearHandler);
 $(&#39;#you-want-to-detect&#39;).bind(&#39;disappear&#39;, disappearHandler);
+
+// trigger when scrolling and visible in screen
+$(&#39;#you-want-to-detect&#39;).bind(&#39;appearing&#39;, appearingHandler);
 </code></pre>
 <h3 id="methods">Methods</h3>
 <h4 id="-appear-check-">$.appear.check()</h4>
@@ -35,6 +37,10 @@ $(&#39;#you-want-to-detect&#39;).bind(&#39;disappear&#39;, disappearHandler);
     use this method to bind again.</p>
 <h5 id="-selector-string-or-object-default-undefined-"><em>selector: <code>String</code> or <code>Object</code> (default: <code>undefined</code>)</em></h5>
 <p>The elements that you want to refresh. It will refresh all elements bound appear event if you don&#39;t pass this parameter.</p>
+<h4 id="-appear-seteventprefix-prefix-">$.appear.setEventPrefix(prefix)</h4>
+<p>You can set prefix to avoid event conflict.</p>
+<h5 id="-prefix-string-"><em>prefix: <code>String</code></em></h5>
+<p>The prefix that you want to set. It will apply to new event bindings. You should define it at first.</p>
 <h3 id="notice">Notice</h3>
 <ul>
     <li>You should initialize after the element add to page. Or it can&#39;t detect whether it&#39;s in screen. If you do that, you still can use <code>$.appear.check()</code>        to force detection.</li>
@@ -54,4 +60,4 @@ $(&#39;#you-want-to-detect&#39;).bind(&#39;disappear&#39;, disappearHandler);
 <p>The project is released under the <a href="http://www.opensource.org/licenses/MIT">MIT license</a>.</p>
 <h2 id="contact">Contact</h2>
 <p>The project&#39;s website is located at <a href="https://github.com/emn178/jquery-appear">https://github.com/emn178/jquery-appear</a>
-    <br>Author: emn178@gmail.com</p>
+    <br>Author: Yi-Cyuan Chen (emn178@gmail.com)</p>
