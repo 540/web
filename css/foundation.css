@@ -3748,7 +3748,7 @@ fieldset legend {
 }
 
 /* Error Handling */
-"[data-abide]" .error small.error, "[data-abide]" .error span.error, "[data-abide]" span.error, "[data-abide]" small.error {
+[data-abide] .error small.error, [data-abide] .error span.error, [data-abide] span.error, [data-abide] small.error {
   display: block;
   font-size: 0.75rem;
   font-style: italic;
@@ -3760,7 +3760,7 @@ fieldset legend {
   color: #FFFFFF;
 }
 
-"[data-abide]" span.error, "[data-abide]" small.error {
+[data-abide] span.error, [data-abide] small.error {
   display: none;
 }
 
@@ -4529,22 +4529,22 @@ kbd {
   color: #333333;
 }
 
-"[data-magellan-expedition]", [data-magellan-expedition-clone] {
+[data-magellan-expedition], [data-magellan-expedition-clone] {
   background: #FFFFFF;
   min-width: 100%;
   padding: 10px;
   z-index: 50;
 }
 
-"[data-magellan-expedition]" .sub-nav, [data-magellan-expedition-clone] .sub-nav {
+[data-magellan-expedition] .sub-nav, [data-magellan-expedition-clone] .sub-nav {
   margin-bottom: 0;
 }
 
-"[data-magellan-expedition]" .sub-nav dd, [data-magellan-expedition-clone] .sub-nav dd {
+[data-magellan-expedition] .sub-nav dd, [data-magellan-expedition-clone] .sub-nav dd {
   margin-bottom: 0;
 }
 
-"[data-magellan-expedition]" .sub-nav a, [data-magellan-expedition-clone] .sub-nav a {
+[data-magellan-expedition] .sub-nav a, [data-magellan-expedition-clone] .sub-nav a {
   line-height: 1.8em;
 }
 
