@@ -53,7 +53,7 @@ $(document).foundation();
                 $('#back').removeClass('right-bottom left-bottom right-top left-top').addClass(backClass).show();
             });
         }
-        $('.box').on('click touchend', function() {
+        $('.box:not(#blog)').on('click touchend', function() {
             if ($(this).hasClass('active')) {
                 return;
             }
