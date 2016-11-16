@@ -4,49 +4,13 @@
             <div class="special-title">
                 <nav>
                     <h2>
-                        <a href="#blog">
+                        <a href="https://blog.540deg.com" target="_blank">
                             <img class="img1" src="images/blog-A.png"/>
                             <img class="img2" src="images/blog-B.png"/>
                         </a>
                     </h2>
                 </nav>
             </div>
-            <div class="desc invisible">
-                <h2>
-                    Un lugar en el que compartir experiencias, intercambiar opiniones y debatir sobre lo que nos mueve:
-                    la artesanía del software.
-                </h2>
-            </div>
-        </div>
-
-        <div class="content invisible">
-            <div class="four spacing"></div>
-            <div class="two spacing"></div>
-            <div class='row'>
-                <div class='large-12 columns'>
-                    {% for post in metadata.posts %}
-                        <div class='post'>
-                            <div class="image">
-                                <a href="{{ post.path }}">
-                                    <img alt="" src="images/{{ post.miniature }}"/>
-                                </a>
-                            </div>
-                            <div class='content'>
-                                <h3><a href="{{ post.path }}">{{ post.title }}</a></h3>
-
-                                <p class='info'>
-                                    <span>{{ post.date|date("j/m/Y") }}</span>
-                                    <span><em>by {{ post.author }}</em></span>
-                                </p>
-
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-
-            <div class="four spacing"></div>
-            <div class="two spacing"></div>
         </div>
     </div>
 </div>

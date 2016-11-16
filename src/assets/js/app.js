@@ -56,7 +56,7 @@ $(document).foundation();
             });
         }
 
-        $('.box').on('click touchend', function () {
+        $('.box:not(#blog)').on('click touchend', function () {
             if ($(this).hasClass('active')) {
                 return;
             }
