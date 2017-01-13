@@ -109,9 +109,9 @@ h1.white, h2.white, h3.white, h4.white, h5.white, h6.white{
     height:140px;
     display:block;
     -webkit-clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    -webkit-clip-path:url(../paths.svg#logo);
-            clip-path:url(../paths.svg#logo); }
+    clip-path:url(../paths.svg#logo);
+    -webkit-clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
 #back{
     position:fixed;
     color:#fff;
@@ -235,9 +235,9 @@ h2.top img{
     width:300px;
     height:300px;
     -webkit-clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    -webkit-clip-path:url(../paths.svg#member);
-            clip-path:url(../paths.svg#member);
+    clip-path:url(../paths.svg#member);
+    -webkit-clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     margin-bottom:30px; }
 .member img.colored{
     display:none;
