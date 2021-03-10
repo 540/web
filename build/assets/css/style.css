@@ -46,9 +46,7 @@
 .hide{
     display:none; }
 a{
-    -webkit-transition-property:color;
     transition-property:color;
-    -webkit-transition-duration:0.3s;
     transition-duration:0.3s; }
 body{
     border:10px solid #333;
@@ -78,16 +76,12 @@ h1.white, h2.white, h3.white, h4.white, h5.white, h6.white{
 /* appear animation */
 .moveup{
     opacity:0;
-    -webkit-transform:translate(0, 200px);
     -ms-transform:translate(0, 200px);
     transform:translate(0, 200px);
-    -webkit-transition-property:opacity -webkit-transform;
     transition-property:opacity transform;
-    -webkit-transition-duration:0.5s;
     transition-duration:0.5s; }
 .appear.moveup{
     opacity:1;
-    -webkit-transform:translate(0, 0);
     -ms-transform:translate(0, 0);
     transform:translate(0, 0); }
 /* logo and menu */
@@ -190,9 +184,7 @@ h1.white, h2.white, h3.white, h4.white, h5.white, h6.white{
     width:100%;
     height:100%; }
 .header:hover{
-    -webkit-transition-property:background;
     transition-property:background;
-    -webkit-transition-duration:0.3s;
     transition-duration:0.3s; }
 .special-title h2{
     margin:0; }
@@ -250,13 +242,11 @@ h2.top img{
     top:0;
     color:#fff;
     font-size:120px;
-    font-family:nevis;
+    font-family:"Helvetica Neue";
     padding-top:90px;
     line-height:120px;
     opacity:1;
-    -webkit-transition-property:opacity;
     transition-property:opacity;
-    -webkit-transition-duration:0.3s;
     transition-duration:0.3s; }
 .letter-overlay:hover{
     opacity:0;
@@ -401,9 +391,7 @@ h2.top img{
 .main-services .icon-text{
     border-right:1px solid #f0f0f0;
     border-bottom:1px solid #f0f0f0;
-    -webkit-transition-property:background;
     transition-property:background;
-    -webkit-transition-duration:0.3s;
     transition-duration:0.3s; }
 .icon-text{
     padding:80px 60px;
@@ -439,11 +427,8 @@ h2.top img{
     text-align:center;
     margin-bottom:40px; }
 .icon-text-diamond .wrapper{
-    -webkit-transition-property:-webkit-transform;
     transition-property:transform;
-    -webkit-transition-duration:0.5s;
     transition-duration:0.5s;
-    -webkit-transition-timing-function:ease-in-out;
     transition-timing-function:ease-in-out; }
 .icon-text-diamond span{
     color:#999; }
@@ -453,7 +438,6 @@ h2.top img{
     height:160px;
     margin:40px auto 80px;
     background:#00e1b6;
-    -webkit-transform:rotate(45deg);
     -ms-transform:rotate(45deg);
     transform:rotate(45deg); }
 .icon-text-diamond .content i{
@@ -466,11 +450,9 @@ h2.top img{
     position:relative;
     left:-40px;
     display:inline-block;
-    -webkit-transform:rotate(-45deg);
     -ms-transform:rotate(-45deg);
     transform:rotate(-45deg); }
 .icon-text-diamond:hover .wrapper{
-    -webkit-transform:rotateY(180deg);
     -ms-transform:rotateY(180deg);
     transform:rotateY(180deg); }
 .icon-text-diamond:hover .wrapper .content{
@@ -510,10 +492,8 @@ h2.top img{
     font-size:14px; }
 .masonry-gallery ul.gallery li img{
     width:100%;
-    -webkit-transform:scale(1);
     -ms-transform:scale(1);
     transform:scale(1);
-    -webkit-transition-duration:0.5s;
     transition-duration:0.5s; }
 .masonry-gallery ul.gallery li .overlay{
     width:calc(100% - 20px);
@@ -525,18 +505,14 @@ h2.top img{
     position:absolute;
     text-align:center;
     background:rgba(255, 255, 255, 0.9);
-    -webkit-transition-property:opacity;
     transition-property:opacity;
-    -webkit-transition-duration:0.5s;
     transition-duration:0.5s; }
 .masonry-gallery ul.gallery li .overlay .thumb-info{
     top:50%;
     margin-top:-43px;
     position:relative;
     opacity:0;
-    -webkit-transition-duration:0.4s;
     transition-duration:0.4s;
-    -webkit-transition-property:opacity;
     transition-property:opacity; }
 .masonry-gallery ul.gallery li .overlay h3::after{
     content:"";
@@ -549,7 +525,6 @@ h2.top img{
     overflow:hidden;
     opacity:1; }
 .masonry-gallery ul.gallery li a:hover img{
-    -webkit-transform:scale(1.1);
     -ms-transform:scale(1.1);
     transform:scale(1.1); }
 .masonry-gallery ul.gallery li a:hover .thumb-info{
