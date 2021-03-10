@@ -9,10 +9,20 @@ Developed with &#10084;&#127866;and [metalsmith.io](http://metalsmith.io "Metals
 ----------
 
 ####Steps to make it work: 
-1. Clone the project: 
-  * `$ git clone git@github.com:540/web.git`
-  * `$ git clone https://github.com/540/web.git`
-2. Navigate to the project folder
-3. `$ npm install`
-4. `$ bower install`
-5. `$ node build`
+Clone the project: 
+
+`$ git clone git@github.com:540/web.git`
+
+`$ git clone https://github.com/540/web.git`
+  
+Navigate to the project folder
+
+1. `$ npm install`
+
+2. `$ bower install`
+
+3. `$ node build`
+
+Deploy to GitHub Pages
+
+`git subtree push --prefix dist origin gh-pages`
