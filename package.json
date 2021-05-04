@@ -4,7 +4,8 @@
   "description": "540 web page",
   "main": "build.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "git subtree push --prefix build origin gh-pages"
   },
   "repository": {
     "type": "git",

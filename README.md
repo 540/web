@@ -25,4 +25,4 @@ Navigate to the project folder
 
 Deploy to GitHub Pages
 
-`git subtree push --prefix dist origin gh-pages`
+`git subtree push --prefix build origin gh-pages`
