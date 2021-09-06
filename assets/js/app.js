@@ -168,9 +168,9 @@ $(document).foundation();
                     data: $(form).serialize(),
                     dataType: 'json',
                     success: function(data) {
-                        if ('success' in data) {
+                        if (data.ok) {
                             $(form).trigger('reset');
-                            $('#thanks').show().fadeOut(8000);
+                            $('#thanks').show().fadeOut(10000);
                         }
                     }
                 });
