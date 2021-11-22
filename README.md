@@ -1,14 +1,14 @@
-###540 web page
+### 540 web page
 You can visit it at [this link](http://540.github.io/web)
 
-Developed with &#10084;&#127866;and [metalsmith.io](http://metalsmith.io "Metalsmith.io")
+Developed with &#10084; &#127866; and [metalsmith.io](http://metalsmith.io "Metalsmith.io")
 
 ----------
 #### Disclamer: Web in progress!
 
 ----------
 
-####Steps to make it work: 
+#### Steps to make it work: 
 Clone the project: 
 
 `$ git clone git@github.com:540/web.git`
@@ -25,4 +25,4 @@ Navigate to the project folder
 
 Deploy to GitHub Pages
 
-`git subtree push --prefix build origin gh-pages`
+`$ git subtree push --prefix build origin gh-pages`
