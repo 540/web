@@ -12,6 +12,14 @@ Clone the project:
 
 `$ git clone https://github.com/540/web.git`
   
+NPM / Node / Node-GYP Versions
+
+`npm - v6.13.4`
+
+`node - v8.17.0`
+
+`node-gyp - v3.8.0`
+
 Navigate to the project folder
 
 1. `$ npm install`
